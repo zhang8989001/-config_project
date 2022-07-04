@@ -1,0 +1,35 @@
+{
+  "name": "config_project",
+  "version": "1.0.0",
+  "description": "项目配置",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "prepare": "husky install",
+    "commit": "git add . && git cz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhang8989001/config_project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhang8989001/config_project/issues"
+  },
+  "homepage": "https://github.com/zhang8989001/config_project#readme",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog-zh"
+    }
+  },
+  "dependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "cz-conventional-changelog-zh": "^0.0.2",
+    "husky": "^8.0.1"
+  },
+  "devDependencies": {
+    "commitizen": "^4.2.4"
+  }
+}
