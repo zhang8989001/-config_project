@@ -23,13 +23,15 @@
       "path": "./node_modules/cz-conventional-changelog-zh"
     }
   },
-  "dependencies": {
-    "@commitlint/cli": "^17.0.3",
-    "@commitlint/config-conventional": "^17.0.3",
-    "cz-conventional-changelog-zh": "^0.0.2",
-    "husky": "^8.0.1"
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
   },
   "devDependencies": {
-    "commitizen": "^4.2.4"
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog-zh": "^0.0.2",
+    "husky": "^8.0.1",
+    "prettier": "^2.7.1"
   }
 }
